@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap.min copy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+</head>
+<body class="register">
+
+          <div class="mobile">
+                  <p>Hey we know you love our App, We are working on the mobile version and we will notify you when we launch it, please for now use your Tablet or Laptop, Thanks for your understanding </p>
+                  <img src="https://img.freepik.com/free-vector/mobile-ui-ux-concept-illustration_114360-11697.jpg?w=740&t=st=1695717867~exp=1695718467~hmac=75dfcb330c4a33db1ea4db0be6abb0a6d2125f0206489428510ffb047144be87" alt="">
+                 </div>
+ 
+     <div class="box">
+        <div class="center">
+        <img src="./images/photo_2023-09-11_21.35_2-removebg-preview.png" alt="Health personnel">
+        <h4>Register</h4>
+        <p>Join the Health Revolution</p>
+        </div>
+        <div class="plan">
+            <label for="">Plan</label>
+             <select class="form-select" id="plan" aria-label="Default select example">
+            <option selected>Select a plan</option>
+            <option value="Hmo Plans">Hmo Plan</option>
+            <option value="Health Insurance">Health insurance</option>
+           <option value="Consultation plans">Consultation Plans</option>
+           </select>
+        </div>
+        <div class="names">
+            <div class="first">
+                <label for="">Surname</label>
+                <input type="text" id="surname" autocomplete="off" class="form-control" placeholder="Surname">
+            </div>
+            <div class="last">
+                <label for="">Firstname</label>
+                <input type="text" class="form-control" autocomplete="off" id="name" placeholder="Firstname">
+            </div>
+            <div class="last">
+                <label for="">Email</label>
+                <input type="text" class="form-control" autocomplete="off" id="email" placeholder="Email">
+            </div>
+
+        </div>
+        
+        <div class="names">
+            <div class="first">
+                <label for="">Password</label>
+                <input type="password" class="form-control" autocomplete="off" id="password" placeholder="password">
+            </div>
+            <div class="last">
+                <label for="">Age</label>
+                <input type="number" id="age"  class="form-control" placeholder="40yrs">
+            </div> 
+            <div class="last">
+                <label for="">Marital Status</label>
+                  <select class="form-select" id="doc" aria-label="Default select example">
+            <option selected>Marital Status</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+           <option value="Divorce">Divorced</option>
+           </select>
+            </div> 
+
+        </div>
+
+        <div class="names">
+            <div class="gen">
+                <label for="">G-type</label>
+                <input type="text" class="form-control" id="genotype" placeholder="AA">
+            </div>
+            <div class="gen">
+                <label for="">BG</label>
+                <input type="text" class="form-control" id="bg" autocomplete="off" placeholder="O+">
+            </div> 
+            <div class="gen">
+                <label for="">Height</label>
+                <input type="text" class="form-control" id="height"bautocomplete="off" placeholder="1.65">
+            </div> 
+            <div class="gen">
+                <label for="">Weight</label>
+                <input type="number" class="form-control" id="weight" autocomplete="off" placeholder="80kg">
+            </div> 
+            <div class="gen">
+                <label for="">Date</label>
+                <input type="date" class="form-control" id="dates" placeholder="date">
+            </div> 
+            <div class="gen">
+                <label for="">Location</label>
+                <input type="text" class="form-control" id="location" autocomplete="off" placeholder="Lagos">
+            </div> 
+
+        </div>
+
+         <div class="phone">
+            <div class="ph">
+                <label for="">Occupation</label>
+            <input type="text" class="form-control" id="occupation" autocomplete="off" placeholder="Developer">
+            </div>
+            <div class="oc">
+                <label for="">Phone Number</label>
+            <input type="number" class="form-control" autocomplete="off" id="number" placeholder="08026650502">
+            </div>
+            <div class="oc">
+                <label for="">Sex</label>
+            <input type="text" class="form-control" id="sex"  placeholder="M/F">
+            </div>
+          
+          </div>
+        
+          
+
+         <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <h6 class="form-check-label" id="check" for="flexCheckDefault">
+            I agree to <span>MedCard</span> terms and condition and i have read the comprehensive list of health benefits
+        </h6>
+        </div>
+        <p>Already have an Account? <a href="./login.html">Login</a> </p>
+        <button class=" btn" id="register" style="background: #013e45; color: #fff">Register</button>
+    </div>
+
+                
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+   import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+   import {getDatabase, set, get, update, remove, ref, child} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCQvRR_-YiQxAl-y6Eq5xRddEWh58hssI8",
+    authDomain: "medcard-83ef1.firebaseapp.com",
+    database: "https://medcard-83ef1-default-rtdb.firebaseio.com/",
+    projectId: "medcard-83ef1",
+    storageBucket: "medcard-83ef1.appspot.com",
+    messagingSenderId: "807213877349",
+    appId: "1:807213877349:web:c9614d86abb8f8fd76de8c"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+ const auth = getAuth(app);
+    const db = getDatabase(app);
+    const databaseRef = ref(db);
+
+
+
+        const checkEl = document.getElementById("flexCheckDefault");	    
+       
+
+       const registerEl = document.getElementById("register");
+   
+   
+     
+
+       registerEl.addEventListener("click", (e) => {
+        if(!checkEl.checked){
+            alert('Please accept our terms and conditions');
+        }else{
+               e.preventDefault();
+     const nameEl = document.getElementById("name").value;
+     const docEl = document.getElementById("doc").value;
+     const dateEl = document.getElementById("dates").value;
+     const locationEl = document.getElementById("location").value;
+     const surnameEl = document.getElementById("surname").value;
+     const planEl = document.getElementById("plan").value;
+     const sexEl = document.getElementById("sex").value;
+    const emailEl = document.getElementById("email").value;
+    const passwordEl = document.getElementById("password").value;
+    const ageEl = document.getElementById("age").value; // Add this line
+    const genotypeEl = document.getElementById("genotype").value; // Add this line
+    const bgEl = document.getElementById("bg").value; // Add this line
+    const weightEl = document.getElementById("weight").value; // Add this line
+    const heightEl = document.getElementById("height").value; // Add this line
+    const occupationEl = document.getElementById("occupation").value; // Add this line
+    const numberEl = document.getElementById("number").value; // Add this line
+        console.log(emailEl);
+      
+        createUserWithEmailAndPassword(auth, emailEl, passwordEl)
+          .then((userCredential) => {
+            const user = userCredential.user;
+            set(ref(db, 'Patients/' + user.uid),{
+              Name: nameEl,
+              Surname: surnameEl,
+              Email: emailEl,
+              Password: passwordEl,
+              Age: ageEl,
+              Genotype: genotypeEl,
+              BloodGroup: bgEl,
+              Weight: weightEl,
+              Height: heightEl,
+              Occupation: occupationEl,
+              Phone: numberEl,
+              Plan: planEl,
+              MaritalStatus: docEl,
+              Sex: sexEl,
+              Location: locationEl,
+              Date: dateEl,
+            
+            })
+      
+            alert('User Created');
+            window.location.href = "login.html";
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+      
+            if (errorCode === "auth/invalid-email") {
+              alert("Invalid email format. Please enter a valid email address.");
+            } else {
+              alert(errorMessage);
+            }
+          });
+        }
+     
+      });
+      
+      
+  
+</script>
+
+
+
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "open Sans";
+  text-decoration: none;
+}
+* ::placeholder {
+  font-size: 10px;
+}
+* label {
+  font-size: 10px !important;
+}
+* input {
+  padding: 4px 5px !important;
+  font-size: 13px !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section .mobile {
+  display: none;
+}
+
+body .mobile {
+  display: none;
+}
+
+#sidebar {
+  width: 100%;
+  max-width: 90px;
+  background-color: #edf8f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+#sidebar img {
+  width: 50px;
+  margin: 60px auto;
+}
+#sidebar .icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sidebar .icons .fa {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #013e45;
+}
+#sidebar .icons .fa:hover {
+  color: #00a3b5;
+}
+
+.main {
+  height: 100vh;
+  padding: 20px;
+  margin-left: 90px;
+}
+.main .extras {
+  width: 40%;
+  padding: 0 10px;
+}
+.main .extras .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #edf8f0;
+  padding: 10px;
+}
+.main .extras .wrap .dt h6 {
+  font-size: 12px;
+}
+.main .extras .wrap .dt p {
+  font-size: 10px;
+}
+.main .extras .wrap .nm {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.main .extras .wrap .nm .ret {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.main .extras .wrap .nm img {
+  width: 40px;
+  height: 40px;
+}
+.main .extras .wrap .nm h6 {
+  font-size: 12px;
+}
+.main .extras .wrap .nm p {
+  font-size: 10px;
+}
+.main .extras .wrap .fa {
+  font-weight: 100;
+  font-size: 10px;
+  color: #1498fd;
+}
+.main .extras .view {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.main .extras .view h6 {
+  font-size: 11px;
+}
+.main .extras .mn h6 {
+  font-size: 10px;
+}
+.main .dash h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #03355a;
+}
+.main .dashboard {
+  display: flex;
+  align-content: center;
+  margin-top: 5px;
+}
+.main .dashboard .details {
+  width: 60%;
+}
+.main .dashboard .details .appoint {
+  margin-top: 10px;
+}
+.main .dashboard .details .appoint .mn h6 {
+  font-size: 10px;
+}
+.main .dashboard .details .appoint h3 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.main .dashboard .details .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #edf8f0;
+  padding: 10px;
+}
+.main .dashboard .details .wrap .dt h6 {
+  font-size: 12px;
+}
+.main .dashboard .details .wrap .dt p {
+  font-size: 10px;
+}
+.main .dashboard .details .wrap .nm {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.main .dashboard .details .wrap .nm .ret {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.main .dashboard .details .wrap .nm img {
+  width: 40px;
+  height: 40px;
+}
+.main .dashboard .details .wrap .nm h6 {
+  font-size: 12px;
+}
+.main .dashboard .details .wrap .nm p {
+  font-size: 10px;
+}
+.main .dashboard .details .BG {
+  text-align: center;
+}
+.main .dashboard .details .BG h5 {
+  color: #fff;
+  font-size: 13px;
+}
+.main .dashboard .details .BG p {
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.main .dashboard .details .BT {
+  text-align: center;
+}
+.main .dashboard .details .BT h5 {
+  color: #fff;
+  font-size: 13px;
+}
+.main .dashboard .details .BT p {
+  color: #fff;
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.main .dashboard .details .age {
+  margin-top: 30px;
+}
+.main .dashboard .details .age #ages {
+  font-size: 12px;
+}
+.main .dashboard .details .age #ages #sex {
+  color: #06d13c !important;
+}
+.main .dashboard .details .bics {
+  width: 100%;
+  background: #013e45;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .dashboard .details .bics .part1 h1 {
+  color: #fff;
+  font-size: 25px;
+}
+.main .dashboard .details .bics .part1 h6 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+.main .nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .nav-top .input {
+  display: flex;
+  align-items: center;
+  outline: none;
+  width: 300px;
+  background-color: rgba(231, 246, 235, 0.5333333333);
+  border: none;
+}
+.main .nav-top .input .fa {
+  margin-right: 5px;
+  color: #13598d;
+}
+.main .nav-top .input input {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.main .nav-top .input ::placeholder {
+  font-size: 12px;
+}
+.main .nav-top .records {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.main .nav-top .records .fa {
+  margin-right: 5px;
+  color: #13598d;
+  cursor: pointer;
+}
+.main .nav-top .records h6 {
+  color: #13598d;
+}
+.main .user-profile {
+  color: #00345b;
+  font-size: 20px;
+}
+.main .user-profile img {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.main .content {
+  background-image: linear-gradient(to right, rgb(0, 60, 71), rgba(255, 255, 255, 0)), url("../images/medium-shot-happy-parents-kids.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.main .content .title {
+  padding: 90px 20px;
+  width: 700px;
+}
+.main .content .title h1 {
+  color: #fff;
+  font-weight: 700px;
+}
+.main .content .title p {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.main .content .title button {
+  margin-top: 20px;
+  background: #039bab !important;
+  color: #fff;
+}
+.main .About {
+  margin-top: 20px;
+}
+.main .About h5 {
+  font-size: 15px;
+  font-weight: 600px;
+  color: #13596d;
+}
+.main .About a {
+  background: #039bab !important;
+  color: #fff;
+  font-size: 13px;
+}
+.main .About .card-text {
+  font-size: 12px;
+  color: rgb(92, 92, 92) c0c;
+}
+.main .med {
+  font-weight: bold;
+  font-size: 14px;
+  color: #045b1b;
+}
+.main .ca {
+  font-weight: bold;
+  font-size: 14px;
+  color: #039bab;
+}
+
+.register {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/medium-shot-health-workers-hospital.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.register .box1 {
+  width: 400px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 100px auto 20px;
+  padding: 20px 15px;
+}
+.register .box1 p {
+  font-size: 9px;
+}
+.register .box1 .plan select {
+  font-size: 10px;
+  color: #393939;
+  padding: 4px !important;
+}
+.register .box {
+  width: 600px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 20px auto 20px;
+  padding: 20px 15px;
+}
+.register .box p {
+  font-size: 9px;
+  text-align: center;
+}
+.register .box h6 {
+  font-size: 11px;
+}
+.register .box .plan select {
+  font-size: 12px;
+  color: #434343;
+  padding: 4px !important;
+}
+.register .center {
+  text-align: center;
+}
+.register .center img {
+  width: 80px;
+}
+.register .center h4 {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2e2e2e;
+}
+.register .center p {
+  font-size: 13px;
+  color: #9c9c9c;
+}
+.register label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #505050;
+}
+.register .names {
+  display: flex;
+  margin-top: 5px;
+}
+.register .names select {
+  font-size: 12px;
+  padding: 5px;
+  width: 185px;
+}
+.register .names input {
+  width: 185px;
+}
+.register .names input ::placeholder {
+  font-size: 8px !important;
+  padding: 4px !important;
+}
+.register .names .first {
+  margin: 0 3px;
+}
+.register .names .last {
+  margin: 0 3px;
+}
+.register .names .gen {
+  margin-right: 5px;
+}
+.register .names .gen input {
+  width: 90px;
+  padding: 4px !important;
+}
+.register .names .gen input ::placeholder {
+  font-size: 10px;
+}
+.register .phone {
+  margin-top: 5px;
+  display: flex;
+}
+.register .phone input {
+  width: 185px;
+  margin: 0 2px;
+}
+.register .form-check1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.register .form-check1 p {
+  font-size: 9px;
+  color: #13598d;
+}
+.register .form-check1 h6 {
+  color: #13598d;
+  font-size: 10px;
+}
+.register .form-check {
+  margin-top: 9px;
+}
+.register .form-check h6 {
+  font-size: 10px;
+}
+.register .form-check h6 span {
+  color: #13598d;
+  font-weight: 600;
+}
+.register button {
+  width: 100%;
+}
+.register .rem {
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    display: none;
+  }
+  #sidebar {
+    display: none;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+  section .mobile {
+    text-align: center;
+    display: block;
+  }
+  section .mobile p {
+    text-align: center;
+    font-family: "Open sans";
+    font-size: 14px;
+  }
+  section .mobile img {
+    width: 100%;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+  }
+  body .box1 {
+    display: none;
+  }
+  body .box {
+    display: none;
+  }
+  body .mobile {
+    text-align: center;
+    display: block;
+  }
+  body .mobile p {
+    text-align: center;
+    font-family: "Open sans";
+    font-size: 14px;
+    color: #fff;
+  }
+  body .mobile img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .box {
+    margin: 0px auto 20px;
+  }
+}
+.fc-icon {
+  font-size: 10px; /* Adjust icon size */
+}
+
+.fc-event-container {
+  border-radius: 5px; /* Rounded corners for event containers */
+}
+
+.fc-day, .fc-day-top {
+  background-color: #ffffff; /* Background color of day cells */
+}
+
+.fc-event {
+  background-color: #4caf50; /* Event background color */
+  color: #ffffff; /* Event text color */
+  border-color: #388e3c; /* Event border color */
+}
+
+#calendar {
+  max-width: 600px; /* Set a maximum width for the calendar */
+  margin: 0 auto;
+  font-size: 13px;
+  color: #00345b;
+  /* Center the calendar on the page */
+}
+
+.fc-toolbar {
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 5px; /* Background color of the toolbar */
+}
+
+.fc-footer {
+  background-color: #f0f0f0; /* Background color of the footer */
+}
+
+.fc {
+  background-color: #ffffff; /* Background color of the calendar */
+  color: #333333; /* Text color */
+  border: 1px solid #cccccc; /* Border color */
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */

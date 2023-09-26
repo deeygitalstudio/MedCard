@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedCard</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap.min copy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet'>
+<link href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <section style="height: 100vh;">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="sidebar" class="col-1 sidebar">
+                  <img src="./images/photo_2023-09-11_21.35_2-removebg-preview.png" alt="logo">
+                  
+                  <div class="icons">
+                    <i class="fa fa-folder-open"></i>
+                    <i class="fa fa-home"></i>
+                    <i class="fa fa-plus-circle"></i>
+                    <i class="fa fa-heartbeat"></i>
+                    <i class="fa fa-address-card"></i>
+                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-question-circle"></i>
+
+                  </div>
+                </div>
+    <div class="mobile">
+                  <p>Hey we know you love our App, We are working on the mobile version and we will notify you when we launch it, please for now use your Tablet or Laptop, Thanks for your understanding </p>
+                  <img src="https://img.freepik.com/free-vector/mobile-ui-ux-concept-illustration_114360-11697.jpg?w=740&t=st=1695717867~exp=1695718467~hmac=75dfcb330c4a33db1ea4db0be6abb0a6d2125f0206489428510ffb047144be87" alt="">
+                 </div>
+
+                <div class="col-11 main">
+                    <div class="nav-top">
+                        <div class="dash">
+                         <h1>Dashboard</h1>
+                        </div>
+            
+                          
+                      <div class="user-profile">
+                        <i class="fa fa-bell"></i>
+                        <img src="" alt="">
+                        <button class="btn-primary btn" id="btn2">Logout</button>
+                      </div>
+                    </div>
+                    <hr>
+
+                    <div class="dashboard">
+                        <div class="details">
+                            <div class="bics">
+                                <div class="part1">
+                                 <h1>Hi <span id="namee"></span></h1>
+                                 <h6 id="job"></h6>
+
+                                 <div class="age">
+                                    <h6 id="ages"><span id="sex"></span></h6>
+                                    <h6 id="location"></h6>
+                                 </div>
+                                </div>
+                                <div class="part2">
+                                  <div class="BG mb-4">
+                                  <p>Blood Group</p>
+                                  <h5 id="BG"></h5>
+                                  </div>
+                                  <div class="BT">
+                                  <p>Blood Type</p>
+                                  <h5 id="BT"></h5>
+                                  </div>
+                                
+                                </div>
+                                <div class="part2">
+                                  <div class="BG mb-4">
+                                  <p>Height</p>
+                                  <h5 id="HT"></h5>
+                                  </div>
+                                  <div class="BT">
+                                  <p>weight</p>
+                                  <h5 id="WT"></h5>
+                                  </div>
+                                
+                                </div>
+                                <div class="part2">
+                                  <div class="BG mb-4">
+                                  <p>Plan</p>
+                                  <h5 id="plan"></h5>
+                                  </div>
+                                  <div class="BT">
+                                  <p>Marital Status</p>
+                                  <h5 id="Doc"></h5>
+                                  </div>
+                                
+                                </div>
+                              
+                            </div>
+
+                              <div class="appoint">
+                                <h3>Upcoming Appointment</h3>
+                                <div class="wrap">
+                                  <div class="dt">
+                                    <h6>18 September</h6>
+                                    <p>12:00</p>
+                                  </div>
+                                  <div class="nm">
+                                    <img src="./images/user-1.png" alt="">
+                                    <div class="ret">
+                                      <h6>Lamboye Adepoju</h6>
+                                      <p>Gynecologist</p>
+                                    </div>
+                                  </div>
+                                  <div class="mn">
+                                    <h6>123</h6>
+                                  </div>
+                                  </div>
+                                <div class="wrap mt-2">
+                                  <div class="dt">
+                                    <h6>18 September</h6>
+                                    <p>14:00</p>
+                                  </div>
+                                  <div class="nm">
+                                    <img src="./images/user-2.png" alt="">
+                                    <div class="ret">
+                                      <h6>Abiola Johnson</h6>
+                                      <p>Counselor</p>
+                                    </div>
+                                  </div>
+                                  <div class="mn">
+                                    <h6>230</h6>
+                                  </div>
+                                  </div>
+                                </div>
+                              <div class="appoint">
+                                <h3>Upcoming Examination</h3>
+                                <div class="wrap" style="background: #daf28d3e;">
+                                  <div class="dt" >
+                                    <h6>8th October</h6>
+                                    <p>15:00</p>
+                                  </div>
+                                  <div class="nm">
+                                    <img src="https://png.pngtree.com/png-clipart/20221020/original/pngtree-blood-drop-cartoon-icon-png-image_8707260.png" alt="">
+                                    <div class="ret">
+                                      <h6>Blood Test</h6>
+                                      <p>Gynecologist</p>
+                                    </div>
+                                  </div>
+                                  <div class="mn">
+                                    <h6>70</h6>
+                                  </div>
+                                  </div>
+                                <div class="wrap mt-2" style="background: #daf28d3e;">
+                                  <div class="dt">
+                                    <h6>25 November</h6>
+                                    <p>14:00</p>
+                                  </div>
+                                  <div class="nm">
+                                    <img src="data:image/png;base64,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" alt="">
+                                    <div class="ret">
+                                      <h6>Chest Xray</h6>
+                                      <p>Gynecologist</p>
+                                    </div>
+                                  </div>
+                                  <div class="mn">
+                                    <h6>520</h6>
+                                  </div>
+                                  </div>
+                                </div>
+
+                        </div>
+
+
+                        
+                        <div class="extras">
+                            <div id="calendar"></div>
+                            <div class="wrap mt-2">
+                                 
+                                  <div class="nm">
+                                    <img src="./images/user-5.png" alt="">
+                                    <div class="ret">
+                                      <h6>Dentist</h6>
+                                      <p>12:00</p>
+                                    </div>
+                                  </div>
+                                  <div class="mn">
+                                    <h6><i class="fa fa-arrow-right"></i></h6>
+                                  </div>
+                                  </div>
+                            <div class="wrap mt-2" >
+                                 
+                                  <div class="nm">
+                                    <img src="./images/people-2.png" alt="" style="border-radius: 50%;">
+                                    <div class="ret">
+                                      <h6>Physiotherapist</h6>
+                                      <p>10:00</p>
+                                    </div>
+                                  </div>
+                                  <div class="mn">
+                                    <h6><i class="fa fa-arrow-right"></i></h6>
+                                  </div>
+                                  </div>
+                                   <div class="view">
+                                    <h6>Pescriptions</h6>
+                                    <h6>View All</h6>
+                                   </div>
+                                
+                                  <div class="wrap mt-2" style="background: #e58df221;">
+                                 
+                                  <div class="nm">
+                               
+                                    <div class="ret">
+                                      <h6>Penixiline</h6>
+                                      <p>400mg</p>
+                                    </div>
+                                  </div>
+                                  <div class="mn">
+                                    <h6>00125</h6>
+                                  </div>
+                                  </div>
+
+                                  <div class="wrap mt-2" style="background: #e58df221;">
+                                 
+                                  <div class="nm">
+                               
+                                    <div class="ret">
+                                      <h6>Ampliclox Becham</h6>
+                                      <p>800mg</p>
+                                    </div>
+                                  </div>
+                                  <div class="mn">
+                                    <h6>50165</h6>
+                                  </div>
+                                  </div>
+                        </div>
+                    </div>
+
+   
+                </div>
+               
+
+               
+            </div>
+            
+        </div>
+
+
+
+
+
+         <!-- Modal for Creating Events -->
+  <div class="modal fade" id="createEventModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create Event</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Form for creating a new event -->
+          <form id="createEventForm">
+            <div class="mb-3">
+              <label for="eventTitle" class="form-label">Event Title</label>
+              <input type="text" class="form-control" id="eventTitle" required>
+            </div>
+            <div class="mb-3">
+              <label for="eventDate" class="form-label">Event Date</label>
+              <input type="text" class="form-control" id="eventDate" readonly>
+            </div>
+            <!-- Add more form fields as needed -->
+            <button type="submit" class="btn btn-primary">Save Event</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      
+    </section>
+    <script src="./jquery-3.7.js"></script>
+ <script src='fullcalendar/dist/index.global.js'></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<!-- Include Moment.js -->
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+   import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword,onAuthStateChanged,signOut, } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+   import {getDatabase, set, get, push, update, remove, ref, child, onValue} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCQvRR_-YiQxAl-y6Eq5xRddEWh58hssI8",
+    authDomain: "medcard-83ef1.firebaseapp.com",
+    database: "https://medcard-83ef1-default-rtdb.firebaseio.com/",
+    projectId: "medcard-83ef1",
+    storageBucket: "medcard-83ef1.appspot.com",
+    messagingSenderId: "807213877349",
+    appId: "1:807213877349:web:c9614d86abb8f8fd76de8c"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+ const auth = getAuth(app);
+    const db = getDatabase(app);
+    const databaseRef = ref(db);
+
+
+
+
+        
+        const nameEl = document.getElementById("name");	    
+        const emailEl = document.getElementById("email");	    
+        const passwordEl = document.getElementById("password");	    
+        const ageEl = document.getElementById("age");	    
+        const genotypeEl = document.getElementById("genotype");	    
+        const bgEl = document.getElementById("bg");	    
+        const weightEl = document.getElementById("weight");	    
+        const heightEl = document.getElementById("height");	    
+        const occupationEl = document.getElementById("occupation");	    
+        const numberEl = document.getElementById("number");	    
+        const PlanEl = document.getElementById("plan");	    
+       
+
+    
+      
+   
+      const logout = document.getElementById("btn2");
+
+      const user = auth.currentUser;
+  
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          // User is signed in
+      
+          const uid = user.uid;
+
+          const userRef = ref(db, "Patients/" + uid);
+          get(userRef)
+            .then((snapshot) => {
+              if (snapshot.exists()) {
+                const userData = snapshot.val();
+                const names = userData.Name;
+                const email = userData.Email;
+                const pass = userData.Password;
+                const jobs = userData.Occupation;
+                const Ages = userData.Age;
+                const secs = userData.Sex;
+                const locate = userData.Location;
+                const Geno = userData.Genotype;
+                const Bgs = userData.BloodGroup;
+                const Hts = userData.Height;
+                const Wts = userData.Weight;
+                const plan = userData.Plan;
+                const Doc = userData.MaritalStatus;
+                console.log("User Data:", userData);
+             
+                // Update the UI with the user's name
+                const nameeEl = document.getElementById("namee");
+                const jobEl = document.getElementById("job");
+                const agesEl = document.getElementById("ages");
+                const sexEl = document.getElementById("sex");
+                const locationEl = document.getElementById("location");
+                const GenEl = document.getElementById("BT");
+                const BgEl = document.getElementById("BG");
+                const WtsEl = document.getElementById("WT");
+                const HtsEl = document.getElementById("HT");
+                const planEl = document.getElementById("plan");
+                const DocEl = document.getElementById("Doc");
+                nameeEl.textContent = names + ",";
+                jobEl.textContent = jobs;
+                agesEl.textContent = Ages + " years" + ", " + secs;
+                sexEl.textContent = secs;
+                locationEl.textContent = locate + " Nigeria";
+                BgEl.textContent = Bgs;
+                GenEl.textContent = Geno;
+                WtsEl.textContent = Wts + "kg";
+                HtsEl.textContent = Hts + "cm";
+                planEl.textContent = plan;
+                DocEl.textContent = Doc;
+                
+              } else {
+                console.log("User data not found");
+              }
+            })
+            .catch((error) => {
+              console.log("Error retrieving user data:", error);
+            });
+        } else {
+          // User is signed out
+          // ...
+        }
+      });
+
+    logout.addEventListener("click", () => {
+        signOut(auth)
+          .then(() => {
+            // Sign-out successful.
+
+            alert("user is now signed out");
+            window.location.href = "index.html";
+          })
+          .catch((error) => {
+            // An error happened.
+            const errorCode = error.code;
+            const errorMessage = error.message;
+
+            alert(errorMessage);
+          });
+      });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    themeSystem: 'bootstrap5',
+    contentHeight: 200,
+    editable: true,
+    initialView: 'dayGridMonth',
+    events: [], // Initialize with an empty array of events
+    dateClick: function(info) {
+      var date = info.dateStr;
+
+      $('#createEventModal').modal('show');
+      $('#eventDate').val(date);
+    }
+  });
+
+  const user = auth.currentUser;
+
+
+      onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    const eventsRef = ref(db, `Patients/${uid}/Events`);
+     $('#createEventForm').on('submit', function(event) {
+  event.preventDefault();
+
+  var title = $('#eventTitle').val();
+  var date = $('#eventDate').val();
+
+  calendar.addEvent({
+    title: title,
+    start: date,
+    end: date,
+    allDay: true
+  });
+
+  // Add event to database
+  push(eventsRef, {
+    title: title,
+    date: date
+  })
+  .then((ref) => {
+    console.log("Event added with ID: ", ref.key);
+  })
+  .catch((error) => {
+    console.error("Error adding event: ", error);
+  });
+
+  $('#createEventModal').modal('hide');
+});
+
+    // Rest of your code that relies on user authentication
+  } else {
+    // Handle case where there is no authenticated user
+  }
+
+
+
+  
+});
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const uid = user.uid;
+    const eventsRef = ref(db, `Patients/${uid}/Events`);
+   
+    // Fetch events associated with the user from the database
+    get(eventsRef)
+      .then((snapshot) => {
+        if (snapshot.exists()) {
+          const eventsData = snapshot.val();
+
+          // Check if eventsData is an object
+          if (typeof eventsData === 'object' && eventsData !== null) {
+            for (const eventId in eventsData) {
+              const event = eventsData[eventId];
+              calendar.addEvent({
+                title: event.title,
+                start: event.date,
+                end: event.date,
+                allDay: true
+              });
+            }
+          }
+        }
+      })
+      .catch((error) => {
+        console.error("Error retrieving events:", error);
+      });
+
+    // Rest of your code
+  } else {
+    // Handle case where there is no authenticated user
+  }
+});
+
+
+ 
+
+  calendar.render();
+});
+
+
+
+
+  
+</script>
+
+<!-- Include jQuery -->
+
+
+
+
+
+<script src="./app.js"></script>
+    <script src="./bootstrap.min.js"></script>
+</body>
+</html>
